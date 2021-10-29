@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-custom{
+    background-image: linear-gradient(100deg,#e7d2ff, #e4fdff);
+}
+.bg-custom2{
+    background-image: linear-gradient(100deg,#110025, #00282b);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.bg-ts{
+    background-color: transparent;
+}
+
+.text-highlighted{
+    color: #2a1d77;
+}
+
+
+.custom-button {
+    background-image: linear-gradient(to right, #360033 0%, #0b8793  51%, #360033  100%);
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+ }
+
+ .custom-button:hover {
+   background-position: right center;
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .caption h3 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  .cover {
+    background: url(images/carosel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 2px #7896FF;
   }
-  to {
-    transform: rotate(360deg);
+  .cover2 {
+    background: url(images/carosel1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px 2px #7896FF;
   }
-}
+  .cover3 {
+    background: url(images/carosel2.jpg);
+    background-size: cover;
+    text-shadow: 2px 2px 2px #7896FF;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
