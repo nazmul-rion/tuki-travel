@@ -1,5 +1,6 @@
+import './Navigationbar.css'
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
-import { Link, useHistory } from "react-router-dom";
+import { useHistory, NavLink } from "react-router-dom";
 import useAuth from '../../hooks/useAuth';
 import logo from '../../images/favicon.ico'
 
@@ -19,22 +20,18 @@ const Navigationbar = () => {
                             height="30"
                             className="d-inline-block align-top"
                         />{' '}
-                        <Link className="text-decoration-none text-highlighted" to="/"><b>Travel Mania</b></Link>
+                        <NavLink className="text-decoration-none text-highlighted" exact to="/"><b>Travel Mania</b></NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Link className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/home">Home</Link>
-                            {user.displayName ? (
-                                <>
-                                    <Link className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/myorders">My Orders</Link>
-                                </>
-                            ) : (
-                                <>
+                        <Nav className="me-auto ">
+                            <NavLink
+                                activeClassName="navbarlink--active"
+                                className="text-decoration-none text-dark mx-3 my-3 my-md-0"
+                                to="/home" activeStyle>Home</NavLink>
+                            <NavLink activeClassName="navbarlink--active" className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/myorders">My Orders</NavLink>
 
-                                </>
-                            )}
-                            <Link className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/allorders">All Orders</Link>
+                            <NavLink activeClassName="navbarlink--active" className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/allorders">All Orders</NavLink>
                         </Nav>
                         {user.displayName ? (
                             <>

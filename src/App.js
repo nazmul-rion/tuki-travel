@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound/NotFound';
 import PrivateRoute from './routes/PrivateRoute';
 import Navigationbar from './pages/Navigationbar/Navigationbar';
 import Footer from './pages/Footer/Footer';
+import PackageDetailsPage from './pages/PackageDetailsPage/PackageDetailsPage';
 
 
 
@@ -25,8 +26,8 @@ function App() {
             <Route path="/home"><HomePage /></Route>
             <Route path="/signin"><Login /></Route>
             <Route path="/signup"><Register /></Route>
-            <PrivateRoute path="/d">
-
+            <PrivateRoute path="/packageDetails/:id">
+              <PackageDetailsPage />
             </PrivateRoute>
             <Route path="*">
               <NotFound />

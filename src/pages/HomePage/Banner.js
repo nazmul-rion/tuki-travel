@@ -1,13 +1,11 @@
 import React from 'react'
-import { Button, Col, Container, Row } from 'react-bootstrap'
-import banner from '../../images/banner.png'
 const Banner = () => {
     return (
         <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item py-5 cover active">
 
-                    <div class="text-center caption py-2 my-5">
+                    <div className="text-center caption py-2 my-5">
                         <div className=" my-5">
                             <h3>Lets plan your best vacation</h3>
                             <h5>Where Camping Adventures Begin</h5>
@@ -16,7 +14,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="carousel-item cover2 py-5">
-                    <div class="text-center caption py-2 my-5">
+                    <div className="text-center caption py-2 my-5">
                         <div className=" my-5">
                             <h3>Explore the world with us</h3>
                             <h5>Where Your Adventures Begin</h5>
@@ -25,7 +23,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="carousel-item cover3 py-5">
-                    <div class="text-center caption py-2  my-5">
+                    <div className="text-center caption py-2  my-5">
                         <div className=" my-5">
                             <h3>Lets plan amazing tour</h3>
                             <h5>Where Camping Adventures Begin</h5>
