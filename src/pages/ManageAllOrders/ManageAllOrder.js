@@ -56,7 +56,7 @@ const ManageAllOrder = () => {
 
     return (
         <div>
-            <h1 className="text-center mb-5">MY ORders</h1>
+            <h1 className="text-center mb-5">Manage All ORders</h1>
 
             <div className="container mb-5">
                 <div className="table-responsive">
