@@ -9,6 +9,8 @@ import PrivateRoute from './routes/PrivateRoute';
 import Navigationbar from './pages/Navigationbar/Navigationbar';
 import Footer from './pages/Footer/Footer';
 import PackageDetailsPage from './pages/PackageDetailsPage/PackageDetailsPage';
+import ManageAllOrder from './pages/ManageAllOrders/ManageAllOrder';
+import MyOrders from './pages/MyOrders/MyOrders';
 
 
 
@@ -28,6 +30,12 @@ function App() {
             <Route path="/signup"><Register /></Route>
             <PrivateRoute path="/packageDetails/:id">
               <PackageDetailsPage />
+            </PrivateRoute>
+            <PrivateRoute path="/manageallorders">
+              <ManageAllOrder></ManageAllOrder>
+            </PrivateRoute>
+            <PrivateRoute path="/myorders">
+              <MyOrders></MyOrders>
             </PrivateRoute>
             <Route path="*">
               <NotFound />
