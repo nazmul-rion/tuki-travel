@@ -5,7 +5,7 @@ import swal from 'sweetalert';
 import useAuth from '../../hooks/useAuth';
 const PlaceOrderForm = (props) => {
     const { user } = useAuth();
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
     const onSubmit = data => {
         swal("Are you sure you want book this package?", {
             buttons: ["No", "Yes"],
@@ -74,10 +74,12 @@ const PlaceOrderForm = (props) => {
                     </div>
                     <div className="col-12 col-md-6">
                         <label>Depture Date</label>
-                        <input type="date" className="form-control mb-3" {...register("DepDate", { required: true })} />
+                        <input type="date" className="form-control mb-3" {...register("DepDate", { required: true })} /> {errors.DepDate && <span className="text-danger">This field is required!</span>}
                     </div>
+
                 </div>
                 <textarea className="form-control mb-3" placeholder="Additional Message" {...register("Message")} />
+
                 <input className="custom-button mb-5" type="submit" />
             </form>
         </div>

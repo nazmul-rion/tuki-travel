@@ -7,7 +7,7 @@ const OrdersApi = () => {
         fetch('https://lit-springs-32062.herokuapp.com/allorders')
             .then(res => res.json())
             .then(data => setord(data));
-    }, []);
+    }, [ord]);
     return [ord, setord];
 }
 

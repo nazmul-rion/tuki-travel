@@ -7,7 +7,7 @@ const PackagesApi = () => {
         fetch('https://lit-springs-32062.herokuapp.com/allpackages')
             .then(res => res.json())
             .then(data => settourpackages(data));
-    }, []);
+    }, [tourpackages]);
     return [tourpackages, settourpackages];
 }
 
