@@ -21,7 +21,7 @@ const PackageDetailsPage = () => {
     return (
         <div>
 
-            <div class="card bg-light text-dark mb-1">
+            <div className="card bg-light text-dark mb-1">
                 <img height="350" src="https://image.freepik.com/free-vector/time-travel-vector-flyer-with-white-copy-space-sky-with-airplane_134830-1061.jpg" className="card-img" alt="..." />
                 <div className="card-img-overlay text-center text-dark">
                     <h1 className="card-title">{singleService?.place_name}</h1>
@@ -32,8 +32,8 @@ const PackageDetailsPage = () => {
             <div className="container my-5">
                 <div className="row ">
                     <div className="col-12 col-md-8">
-                        <div class=" mb-3">
-                            <img src={singleService?.img} class="card-img-top" alt="..." />
+                        <div className=" mb-3">
+                            <img src={singleService?.img} className="card-img-top" alt="..." />
                             <div className="card-body">
                                 <h5 className="card-title">{singleService?.place_name}</h5>
                                 <div>
@@ -53,10 +53,23 @@ const PackageDetailsPage = () => {
                     </div>
 
                     <div className="col-12 col-md-4">
-                        <div className="card mt-5">
-                            <h3 className="fw-bold text-center my-3">Book This Package</h3>
-                            <PlaceOrderForm packID={id}></PlaceOrderForm>
-                        </div>
+                        {
+                            singleService?.place_name ? (
+                                <div className="card mt-5">
+                                    <h3 className="fw-bold text-center my-3">Book This Package</h3>
+                                    <PlaceOrderForm
+                                        packID={id}
+                                        packName={singleService?.place_name}
+                                    ></PlaceOrderForm>
+                                </div>
+                            )
+                                : (
+                                    <>
+                                    </>
+                                )
+
+                        }
+
 
 
                     </div>

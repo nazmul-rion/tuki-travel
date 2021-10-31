@@ -11,6 +11,7 @@ import Footer from './pages/Footer/Footer';
 import PackageDetailsPage from './pages/PackageDetailsPage/PackageDetailsPage';
 import ManageAllOrder from './pages/ManageAllOrders/ManageAllOrder';
 import MyOrders from './pages/MyOrders/MyOrders';
+import AddNewPackage from './pages/AddNewPackage/AddNewPackage';
 
 
 
@@ -36,6 +37,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute path="/myorders">
               <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/addnewPackage">
+              <AddNewPackage />
             </PrivateRoute>
             <Route path="*">
               <NotFound />

@@ -31,7 +31,8 @@ const Navigationbar = () => {
                                 to="/home" activeStyle>Home</NavLink>
                             <NavLink activeClassName="navbarlink--active" className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/myorders">My Orders</NavLink>
 
-                            <NavLink activeClassName="navbarlink--active" className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/manageallorders">All Orders</NavLink>
+                            <NavLink activeClassName="navbarlink--active" className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/manageallorders">Manage All Orders</NavLink>
+                            <NavLink activeClassName="navbarlink--active" className="text-decoration-none text-dark mx-3 my-3 my-md-0" to="/addnewPackage">Add New Package</NavLink>
                         </Nav>
                         {user.displayName ? (
                             <>

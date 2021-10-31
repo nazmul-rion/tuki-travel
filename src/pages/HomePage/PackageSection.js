@@ -12,7 +12,7 @@ const PackageSection = () => {
                 {
                     tourpackages.map(tourpackage => <PackageCard
 
-                        key={tourpackage.img}
+                        key={tourpackage._id}
                         tourpackage={tourpackage}
                     >
                     </PackageCard>)

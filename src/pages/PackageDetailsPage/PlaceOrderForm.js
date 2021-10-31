@@ -34,13 +34,14 @@ const PlaceOrderForm = (props) => {
     return (
         <div className="container">
             <form onSubmit={handleSubmit(onSubmit)}>
-                <input hidden value={props.packID} {...register("packageID", { required: true })} />
+                <input hidden value={props.packID || ' '} {...register("packageID", { required: true })} />
+                <input hidden value={props.packName || ' '} {...register("packageName", { required: true })} />
                 <input hidden value="Pending" {...register("Status", { required: true })} />
-                <input hidden value={user.uid}  {...register("UserId", { required: true })} />
+                <input hidden value={user.uid || ' '}  {...register("UserId", { required: true })} />
                 <label>Full Name</label>
-                <input readOnly value={user.displayName} className="form-control mb-3" placeholder="Enter your Full Name" {...register("FullName", { required: true })} />
+                <input readOnly value={user.displayName || ' '} className="form-control mb-3" placeholder="Enter your Full Name" {...register("FullName", { required: true })} />
                 <label>Email Address</label>
-                <input readOnly value={user.email} className="form-control mb-3" placeholder="Enter your Email Address" {...register("EmailAdress", { required: true })} />
+                <input readOnly value={user.email || ' '} className="form-control mb-3" placeholder="Enter your Email Address" {...register("EmailAdress", { required: true })} />
                 <div className="row mb-3">
                     <div className="col">
                         <label>Adults</label>
