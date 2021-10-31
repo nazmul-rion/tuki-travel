@@ -18,9 +18,9 @@ const Footer = () => {
 
                 <div className="col-12 col-md-3 ">
                     <h4 className="underline">Travel Destination</h4>
-                    <p>Tour to Spain</p>
-                    <p>Tour to Spain</p>
-                    <p>Tour to Spain</p>
+                    <p>Tour to Glimpses of Russia</p>
+                    <p>Tour to Glimpses of Switzerland</p>
+                    <p>Tour to Greece </p>
                     <p>Tour to Spain</p>
                 </div>
 

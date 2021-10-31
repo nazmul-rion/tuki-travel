@@ -37,6 +37,11 @@ const PackageDetailsPage = () => {
                             <div className="card-body">
                                 <h5 className="card-title">{singleService?.place_name}</h5>
                                 <div>
+                                    <h3>
+                                        <span className="fw-bold text-danger">${singleService?.price} </span><small>/Per Person</small>
+                                    </h3>
+                                </div>
+                                <div>
                                     <Rating
                                         initialRating={singleService?.rating}
                                         emptySymbol="fas fa-star"

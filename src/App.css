@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
-}
-
+    transition: all 1s ease-out;
+}  
 .bg-custom{
     background-image: linear-gradient(100deg,#e7d2ff, #e4fdff);
 }
@@ -66,4 +66,12 @@
     text-shadow: 2px 2px 2px #7896FF;
     background-attachment: fixed;
     background-repeat: no-repeat;
+  }
+
+  .card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  .card:hover{
+    border-radius: 10px 10px 46px 7px;
   }
