@@ -1,5 +1,6 @@
 import React from 'react';
 import { Spinner } from 'react-bootstrap';
+import Loader from 'react-loader-spinner';
 import { Redirect, Route } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
@@ -8,7 +9,15 @@ const PrivateRoute = ({ children, ...rest }) => {
     const { user, loading } = useAuth();
 
     if (loading) {
-        return <Spinner className="m-auto" animation="grow" variant="info" />
+        return <div className="d-flex justify-content-center">
+            <Loader
+                type="Puff"
+                color="#00BFFF"
+                height={300}
+                width={300}
+
+            />
+        </div>
     }
     return (
         <Route

@@ -1,4 +1,5 @@
 import React from 'react'
+import Loader from 'react-loader-spinner';
 import swal from 'sweetalert';
 import OrdersApi from '../../hooks/OrdersApi';
 import useAuth from '../../hooks/useAuth'
@@ -32,7 +33,17 @@ const MyOrders = () => {
             });
 
     }
+    if (ord.length === 0) {
+        return <div className="d-flex justify-content-center">
+            <Loader
+                type="Puff"
+                color="#00BFFF"
+                height={300}
+                width={300}
 
+            />
+        </div>
+    }
     return (
         <div>
             <h1 className="text-center mb-5">MY ORders</h1>
