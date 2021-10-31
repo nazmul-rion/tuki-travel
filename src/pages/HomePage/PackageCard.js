@@ -30,7 +30,7 @@ const PackageCard = (props) => {
                             </div>
 
                             <div>
-                                <Link className="btn btn-info mt-3" to={`/packageDetails/${_id}`}>Learn More <i className="fas fa-arrow-right"></i></Link>
+                                <Link className="btn btn-info mt-3" to={`/packageDetails/${_id}`}>Proceed <i className="fas fa-arrow-right"></i></Link>
                             </div>
                         </div>
                     </div>
