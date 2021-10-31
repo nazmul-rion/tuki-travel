@@ -85,7 +85,7 @@ const ManageAllOrder = () => {
                                         <td>{myOrder.TicketType}</td>
                                         <td>{myOrder.DepDate}</td>
                                         <td>{myOrder.Status}</td>
-                                        <td>  <button onClick={() => handleUpdateOrder(myOrder._id)} className="btn btn-info">To Confirm <i className="fas fa-check-circle"></i></button>
+                                        <td>  <button onClick={() => handleUpdateOrder(myOrder._id)} className="btn btn-success">Approve <i className="fas fa-check-circle"></i></button>
                                         </td>
 
                                         <td><button onClick={() => handleDeleteOrder(myOrder._id)} className="btn btn-danger">Delete</button></td>
