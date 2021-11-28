@@ -1,5 +1,5 @@
 # Travel Agency Website
-[Click here to visit Travel Mania Website](https://travelmania-nazmul-rion.netlify.app/)
+[Click here to visit Travel Mania Website](https://tuki-travel-nazmul-rion.netlify.app/)
 ## Short Description
 Its a React website with Node Js  for providing tour service via online. It also responsive for mobile devices. Here anyone can place booking for travel.
 
