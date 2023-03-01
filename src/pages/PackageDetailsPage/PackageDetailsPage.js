@@ -8,7 +8,7 @@ const PackageDetailsPage = () => {
     const [services, setServices] = useState([]);
     const [singleService, setSingleService] = useState({});
     useEffect(() => {
-        fetch('https://lit-springs-32062.herokuapp.com/allpackages')
+        fetch('https://tuki-travel-nazmul-rion.onrender.com/allpackages')
             .then(res => res.json())
             .then(data => setServices(data));
     }, []);

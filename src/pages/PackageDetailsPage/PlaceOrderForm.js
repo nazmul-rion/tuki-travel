@@ -12,7 +12,7 @@ const PlaceOrderForm = (props) => {
         })
             .then((value) => {
                 if (value) {
-                    axios.post('https://lit-springs-32062.herokuapp.com/addorder', data)
+                    axios.post('https://tuki-travel-nazmul-rion.onrender.com/addorder', data)
                         .then(res => {
                             if (res.data.insertedId) {
                                 swal({
